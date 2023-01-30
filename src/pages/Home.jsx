@@ -2,9 +2,11 @@ import React from 'react'
 import Navbar from "../components/Navbar"
 import Announcements from '../components/Announcements'
 import Slider from '../components/Slider';
-import Services from '../components/Services';
 import Categories from '../components/Category';
 import Footer from "../components/Footer";
+import Categories1 from '../components/Categories1';
+import Products from '../components/Products';
+import "./Home.css"
 
 const Home = () => {
   return (
@@ -14,7 +16,8 @@ const Home = () => {
         <Navbar/>
         <Slider/>
         <Categories/>
-        <Services/>
+        <Categories1/>
+        <Products/>
         <Footer/>
     </div>
   )

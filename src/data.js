@@ -1,22 +1,21 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://o.remove.bg/downloads/41cdbcf8-e338-4e3a-9293-2da7cf888667/32-323593_mens-fashion-png-transparent-image-men-fashion-model-removebg-preview.png",
-      title: "SUMMER SALE",
+      img: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f5fafd",
     },
     {
       id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
+      img: "https://images.pexels.com/photos/6776724/pexels-photo-6776724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
     },
     {
       id: 3,
-      img: "https://i.ibb.co/cXFnLLV/3.png",
-      title: "LOUNGEWEAR LOVE",
+      img: "https://images.unsplash.com/photo-1485815394546-2308e52d7459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      title: "Hoodies",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fbf0f4",
     },
@@ -43,15 +42,15 @@ export const sliderItems = [
   export const popularProducts = [
     {
       id:1,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+      img:"https://www.jiomart.com/images/product/600x750/rv3lgosfju/dillinger-men-s-black-typographic-100-cotton-oversized-t-shirt-product-images-rv3lgosfju-0-202206030438.jpg",
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:"https://m.media-amazon.com/images/I/51etJgsUS6L._UX679_.jpg",
     },
     {
       id:3,
-      img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+      img:"https://assets.ajio.com/medias/sys_master/root/20221104/bXWa/63642d35aeb269659c71385b/-473Wx593H-465232757-black-MODEL2.jpg",
     },
     {
       id:4,
@@ -72,5 +71,37 @@ export const sliderItems = [
     {
       id:8,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    },
+    {
+      id:9,
+      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+    },
+    {
+      id:10,
+      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+    },
+    {
+      id:11,
+      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    },
+    {
+      id:12,
+      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+    },
+    {
+      id:13,
+      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+    },
+    {
+      id:14,
+      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    },
+    {
+      id:15,
+      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+    },
+    {
+      id:16,
+      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
     },
   ]
