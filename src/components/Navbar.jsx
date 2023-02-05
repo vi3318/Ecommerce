@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import logoColor from "../images/logoColor.png"
+import logoNoBackground from "../images/logoNoBackground.png"
 import Badge from '@mui/material/Badge';
 
 const Container = styled.div`
@@ -27,17 +27,18 @@ const Left = styled.div`
 
 `
 
-const Logo = styled.div`
-    width: 50px;
-    height: 50px;
-    padding: 0 20px;
+const Logo = styled.img`
+    width: 100px;
+    height: 45px;
+    padding: 0px 15px;
 `
 
+
 const SearchContainer = styled.div`
-  border: 0.5px solid lightgray;
   display: flex;
+  border: none;
   align-items: center;
-  margin-left: 55px;
+  margin-left: 35px;
   padding: 5px;
 
 `
@@ -66,8 +67,8 @@ const Navbar = () => {
     <Container>
         <Wrapper>
           <Left>
-            <Logo>
-            <img src={logoColor} alt="Logo"></img>
+            <Logo
+             src={logoNoBackground} alt="Logo">
             </Logo>
             <SearchContainer>
               <input type="text" placeholder="Search..."/>

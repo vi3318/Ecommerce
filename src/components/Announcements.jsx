@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Container = styled.marquee`
     height: 30px;
-    background-image: linear-gradient(90deg,#eecda3,#ef629f);
+    background-color: black;
     color: white;
     padding: none;
 `
