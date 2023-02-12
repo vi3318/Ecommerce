@@ -27,16 +27,19 @@ export const sliderItems = [
       id: 1,
       img: "https://images.unsplash.com/photo-1572495641004-28421ae52e52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "HOODIES STYLE!",
+      cat: "hoodies"
     },
     {
       id: 2,
       img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       title: "LIGHT JACKETS",
+      cat: "women"
     },
     {
       id: 3,
       img: "https://images.pexels.com/photos/2635315/pexels-photo-2635315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "STYLISH SHIRTS",
+      cat: "shirts"
     },
   ];
 

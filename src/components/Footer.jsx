@@ -1,6 +1,6 @@
 import { Instagram,Facebook, MailOutline,Phone,Pinterest,Room,Twitter,} from "@mui/icons-material";
 import styled from "styled-components";
-
+import "../css/footer.css";
 
 const Container = styled.div`
   display: flex;
@@ -78,6 +78,8 @@ const Payment = styled.img`
     width: 50%;
 `;
 
+
+
 const Footer = () => {
   return (
     <Container>
@@ -90,13 +92,13 @@ const Footer = () => {
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
-            <Facebook />
+            <a href=""><Facebook /></a>
           </SocialIcon>
           <SocialIcon color="E4405F">
-            <Instagram />
+          <a href=""><Instagram /></a>
           </SocialIcon>
           <SocialIcon color="55ACEE">
-            <Twitter />
+          <a href=""><Twitter /></a>
           </SocialIcon>
           <SocialIcon color="E60023">
             <Pinterest />

@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 60vh;
-  background-image: url("https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  opacity: 0.7;
+  background-image: url("https://images.unsplash.com/photo-1613461920867-9ea115fee900?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,11 +15,13 @@ const Container = styled.div`
 const Title = styled.h1`
   font-size: 70px;
   margin-bottom: 20px;
+  color: black;
 `;
 
 const Desc = styled.div`
   font-size: 24px;
   font-weight: 300;
+  color: white;
   margin-bottom: 20px;
 `;
 

@@ -2,7 +2,10 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Announcements from "../components/Announcements";
 import Products from "../components/Products";
+import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { useState } from "react";
+import {useLocation} from "react-router";
 
 
 const Container = styled.div`
@@ -30,8 +33,21 @@ const Select = styled.select`
 
 const Option = styled.option`
 `
+//use location hook returns the location object from the current url
 
 const ProductList = () => {
+  const location = useLocation();
+  const cat =(location.pathname.split("/")[2]);
+  const [filters,setFilters] = useState({});
+  const [sort,setSort] = useState("newest");
+
+  const handleFilters =(e)=>{
+    const value = e.target.value;
+    setFilters({
+        ...filters,
+        [e.target.name]: value,
+    });
+  };
   return (
      <Container>
         <Announcements/>
@@ -39,18 +55,18 @@ const ProductList = () => {
         <Title>Shopping</Title>
         <FilterContainer>
             <Filter><FilterText>Filter Products:</FilterText>
-            <Select>
-                <Option disabled selected>
+            <Select name="color" onChange={handleFilters}>
+                <Option disabled >
                     Color
                 </Option>
                 <Option>White</Option>
-                <Option>White</Option>
-                <Option>White</Option>
-                <Option>White</Option>
-                <Option>White</Option>
+                <Option>Red</Option>
+                <Option>Orange</Option>
+                <Option>Blue</Option>
+                <Option>Black</Option>
             </Select>
-            <Select>
-                <Option disabled selected>
+            <Select name="size" onChange={handleFilters}>
+                <Option disabled >
                     Size
                 </Option>
                 <Option>XS</Option>
@@ -61,19 +77,19 @@ const ProductList = () => {
             </Select>
             </Filter>
             <Filter><FilterText>Sort Products:</FilterText>
-            <Select>
-                <Option selected>Newest</Option>
-                <Option>Lowest to Highest</Option>
-                <Option>Highest to Lowest</Option>
-                <Option>Rating</Option>
+            <Select onChange={e=>setSort(e.target.value)}>
+                <Option value="newest">Newest</Option>
+                <Option value="lh">Lowest to Highest</Option>
+                <Option value="hl">Highest to Lowest</Option>
             </Select>
             </Filter>
         </FilterContainer>
-        <Products/>
+        <Products cat={cat} filters={filters} sort={sort}/>
+        <Newsletter/>
         <Footer/>
      </Container>
      
   )
 }
 
-export default ProductList
+export default ProductList;

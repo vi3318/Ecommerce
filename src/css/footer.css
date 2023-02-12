@@ -1,15 +1,4 @@
-.final{
-    padding: none;
-    margin: none;
-
-}
-ul{
-    text-align: left;
-}
-h5{
-    text-align: left;
-}
-
-ul li a{
-    text-decoration: none;
+a{
+    text-decoration:none;
+    color: white;
 }
