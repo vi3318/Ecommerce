@@ -4,6 +4,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import logoNoBackground from "../images/logoNoBackground.png"
 import Badge from '@mui/material/Badge';
+import { Link } from 'react-router-dom';
+import "./Navbar.css"
+
+
 
 const Container = styled.div`
     height: 60px;
@@ -63,6 +67,10 @@ const MenuItem =styled.div`
 
 
 const Navbar = () => {
+
+  const toggleTheme =() => {
+    
+  }
   return (
     <Container>
         <Wrapper>
@@ -76,14 +84,24 @@ const Navbar = () => {
             </SearchContainer>
           </Left>
           <Right>
-            <MenuItem>HOME</MenuItem>
-            <MenuItem>ABOUT</MenuItem>
-            <MenuItem>REGISTER</MenuItem>
-            <MenuItem>SIGN IN</MenuItem>
+            <MenuItem><Link to='/'>HOME</Link></MenuItem>
+            <MenuItem><Link to='/about'>ABOUT</Link></MenuItem>
+            <MenuItem><Link to="/register">REGISTER</Link></MenuItem>
+            <MenuItem><Link to="/login">SIGN IN</Link></MenuItem>
             <MenuItem>
             <Badge badgeContent={4} color="primary">
+              <Link to="/cart">
               <ShoppingCartOutlinedIcon/>
+              </Link>
             </Badge>
+            </MenuItem>
+            <MenuItem>
+            <input type="checkbox" class="checkbox" id="checkbox" onClick={()=>toggleTheme()}/>
+              <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class='fas fa-sun'></i>
+                <span class="ball"></span>
+              </label>
             </MenuItem>
           </Right>
         </Wrapper>

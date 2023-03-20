@@ -78,3 +78,134 @@ export const sliderItems = [
     },
     
   ]
+
+  export const AllHoodies =[
+    {
+      id: 1,
+      img:"",
+      price: "",
+    },
+    {
+      id: 2,
+      img:"",
+      price: "",
+    },
+    {
+      id: 3,
+      img:"",
+      price: "",
+    },
+    {
+      id: 4,
+      img:"",
+      price: "",
+    },
+    {
+      id: 5,
+      img:"",
+      price: "",
+    },
+    {
+      id: 6,
+      img:"",
+      price: "",
+    },
+    {
+      id: 7,
+      img:"",
+      price: "",
+    },
+    {
+      id: 8,
+      img:"",
+      price: "",
+    },
+    
+  ]
+
+  export const AllShirts =[
+    {
+      id: 1,
+      img:"",
+      price: "",
+    },
+    {
+      id: 2,
+      img:"",
+      price: "",
+    },
+    {
+      id: 3,
+      img:"",
+      price: "",
+    },
+    {
+      id: 4,
+      img:"",
+      price: "",
+    },
+    {
+      id: 5,
+      img:"",
+      price: "",
+    },
+    {
+      id: 6,
+      img:"",
+      price: "",
+    },
+    {
+      id: 7,
+      img:"",
+      price: "",
+    },
+    {
+      id: 8,
+      img:"",
+      price: "",
+    },
+    
+  ] 
+
+  export const AllJackets =[
+  {
+    id:1,
+    img:"",
+    price: "",
+  },
+  {
+    id:2,
+    img:"",
+    price: "",
+  },
+  {
+    id:3,
+    img:"",
+    price: "",
+  },
+  {
+    id:4,
+    img:"",
+    price: "",
+  },
+  {
+    id:5,
+    img:"",
+    price: "",
+  },
+  {
+    id:6,
+    img:"",
+    price: "",
+  },
+  {
+    id:7,
+    img:"",
+    price: "",
+  },
+  {
+    id:8,
+    img:"",
+    price: "",
+  },
+]
