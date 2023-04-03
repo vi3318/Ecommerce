@@ -1,61 +1,66 @@
-import './Register.css';
-import React, { useState } from 'react';
-import Axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
+const Register = () => {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
+  const navigate = useNavigate(); // <-- useNavigate instead of useHistory
 
-function Register() {
-
-  const [name, setName] = useState("")
-  const [email,setEmail] = useState("")
-  const [password, setPassword] = useState("")
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    Axios.post('http://localhost:4000/insert', {
-      firstName: name,
-      Email: email,
-      EmailPassword:password,
-    })
+    try {
+      await axios.post("/auth/register", {
+        username,
+        email,
+        password,
+      });
+      alert("Registration successful!"); // <-- show a success message
+      navigate("/"); // <-- navigate to home page
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
- 
-  }
   return (
-    <div className="App">
-      <header className="App-header">      
-        <div className="logIn-form">
-            <form onSubmit={handleSubmit}>
-              <h1>Register</h1>
-                {/* <p>First Name</p> */}
-                  <input
-                  className = "Name" 
-                  type="text" 
-                  name="name" 
-                  placeholder="First name ..."
-                  onChange={(e) => {setName(e.target.value)}}
-                  />
-                <input 
-                  className = "Email"
-                  type="email"
-                  name="email"
-                  placeholder='Enter your email...'
-                  onChange={(e) => {setEmail(e.target.value)}}
-                  />
-                
-                  <input 
-                  className = "Password"
-                  type="password" 
-                  name ="password" 
-                  placeholder = "Password...." 
-                  onChange={(e) => {setPassword(e.target.value)}}
-                  />
-                  
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-      </header>
+    <div className="register">
+      <span className="registerTitle">Register</span>
+      <form className="registerForm" onSubmit={handleSubmit}>
+        <label>Username</label>
+        <input
+          className="registerInput"
+          type="text"
+          placeholder="Enter your username..."
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <label>Email</label>
+        <input
+          className="registerInput"
+          type="text"
+          placeholder="Enter your email..."
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <label>Password</label>
+        <input
+          className="registerInput"
+          type="password"
+          placeholder="Enter your password..."
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button className="registerButton" type="submit">
+          Register
+        </button>
+      </form>
+      <button className="registerLoginButton">
+        <Link className="link" to="/login">
+          Login
+        </Link>
+      </button>
     </div>
   );
-}
+};
 
 export default Register;

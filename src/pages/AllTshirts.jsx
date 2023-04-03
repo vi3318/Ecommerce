@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import { useLocation } from "react-router";
 import { useState } from "react";
 
-import Hoodie from "../components/Hoodie";
+import Tshirt from "../components/Tshirt";
 
 const Container = styled.div`
 
@@ -89,7 +89,7 @@ const ProductList = () => {
             </Select>
             </Filter>
         </FilterContainer>
-        <Hoodie cat={cat} filters={filters} sort={sort}/>
+        <Tshirt cat={cat} filters={filters} sort={sort}/>
         <Newsletter/>
         <Footer/>
      </Container>

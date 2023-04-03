@@ -11,7 +11,7 @@ const Container = styled.div`
     justify-content: space-between;
 `;
 
-const Hoodie = ({cat,filters,sort}) => {
+const Tshirt = ({cat,filters,sort}) => {
     
     const [products,setProducts] = useState([]);
     const [filteredProducts,setFilteredProducts] = useState([]);
@@ -65,4 +65,4 @@ const Hoodie = ({cat,filters,sort}) => {
     );
 };
 
-export default Hoodie;
+export default Tshirt;

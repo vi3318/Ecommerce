@@ -6,8 +6,7 @@ import logoNoBackground from "../images/logoNoBackground.png"
 import Badge from '@mui/material/Badge';
 import { Link } from 'react-router-dom';
 import "./Navbar.css"
-
-
+import { useSelector } from 'react-redux';
 
 const Container = styled.div`
     height: 60px;
@@ -61,16 +60,15 @@ const MenuItem =styled.div`
   margin-left: 65px;
 
 `
-
-
-
-
-
 const Navbar = () => {
 
   const toggleTheme =() => {
     
   }
+  
+  const quantity = useSelector(state=>state.cart.quantity)
+  
+  
   return (
     <Container>
         <Wrapper>
@@ -88,13 +86,14 @@ const Navbar = () => {
             <MenuItem><Link to='/about'>ABOUT</Link></MenuItem>
             <MenuItem><Link to="/register">REGISTER</Link></MenuItem>
             <MenuItem><Link to="/login">SIGN IN</Link></MenuItem>
+            <MenuItem><Link to="/signout">SIGN OUT</Link></MenuItem>
+            <Link to="/cart">
             <MenuItem>
-            <Badge badgeContent={4} color="primary">
-              <Link to="/cart">
+            <Badge badgeContent={quantity} color="primary">
               <ShoppingCartOutlinedIcon/>
-              </Link>
             </Badge>
             </MenuItem>
+            </Link>
             <MenuItem>
             <input type="checkbox" class="checkbox" id="checkbox" onClick={()=>toggleTheme()}/>
               <label for="checkbox" class="label">

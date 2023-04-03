@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AllHoodies } from "../data";
+import { AllShirts } from "../data";
 import Product from "./Product";
 
 const Container = styled.div`
@@ -9,10 +9,12 @@ const Container = styled.div`
     justify-content: space-between;
 `;
 
+
+
 const Shirts = () => {
   return (
     <Container>
-      {AllHoodies.map((item) => (
+      {AllShirts.map((item) => (
         <Product item={item} key={item.id} />
       ))}
     </Container>

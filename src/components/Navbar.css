@@ -1,3 +1,7 @@
+body, html {
+  overflow-x: hidden;
+}
+
 .checkbox {
     opacity: 0;
     position: absolute;
@@ -39,3 +43,4 @@
   .fa-sun {
     color: white;
   }
+

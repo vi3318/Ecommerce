@@ -1,6 +1,7 @@
 import { Instagram,Facebook, MailOutline,Phone,Pinterest,Room,Twitter,} from "@mui/icons-material";
 import styled from "styled-components";
 import "../css/footer.css";
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -92,13 +93,13 @@ const Footer = () => {
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
-            <a href=""><Facebook /></a>
+            <a href="https://www.facebook.com/"><Facebook /></a>
           </SocialIcon>
           <SocialIcon color="E4405F">
-          <a href=""><Instagram /></a>
+          <a href="https://www.instagram.com/"><Instagram /></a>
           </SocialIcon>
           <SocialIcon color="55ACEE">
-          <a href=""><Twitter /></a>
+          <a href="https://www.twitter.com/"><Twitter /></a>
           </SocialIcon>
           <SocialIcon color="E60023">
             <Pinterest />
@@ -108,10 +109,10 @@ const Footer = () => {
       <Center>
         <Title>Useful Links</Title>
         <List>
-          <ListItem>Home</ListItem>
-          <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
+          <ListItem><Link to="/">Home</Link></ListItem>
+          <ListItem><Link to="/cart">Cart</Link></ListItem>
+          <ListItem><Link to="/men">Men Fashion</Link></ListItem>
+          <ListItem><Link to="/women">Women Fashion</Link></ListItem>
           <ListItem>Accessories</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
